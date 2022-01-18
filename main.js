@@ -26,7 +26,8 @@ while (userCoice != computerChoice) {
   } else if (userCoice > computerChoice) {
     alert("you need to choose a lower number. " + "the last choose " + lastCoice);
   }
-  userCoice = guessNumber();
   lastCoice = userCoice;
+  userCoice = guessNumber();
+  
 }
 alert("Well done, you've got the number " + "(" + computerChoice + ")");
