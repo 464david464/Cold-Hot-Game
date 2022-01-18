@@ -7,7 +7,7 @@ function randomeNumberFunc() {
 function guessNumber() {
   let myGuess = parseFloat(
     prompt(
-      'the computer choosed a number between 0 - 5000, try to guess the number .' + computerChoice
+      'the computer choosed a number between 0 - 5000, try to guess the number.'
     )
   );
   return myGuess;
@@ -15,11 +15,11 @@ function guessNumber() {
 
 const computerChoice = randomeNumberFunc();
 let userCoice = guessNumber();
-let lastCoice = userCoice;
+
 
 
 while (userCoice != computerChoice) {
-    
+  let lastCoice = userCoice; 
   if (userCoice < computerChoice) {
     alert("you need to choose a higher number. " + "the last choose " + lastCoice);
   } else if (userCoice > computerChoice) {
