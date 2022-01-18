@@ -15,18 +15,17 @@ function guessNumber() {
 
 const computerChoice = randomeNumberFunc();
 let userCoice = guessNumber();
-let lastCoice = '';
+let lastCoice = userCoice;
 
 
 while (userCoice != computerChoice) {
-    
     
   if (userCoice < computerChoice) {
     alert("you need to choose a higher number. " + "the last choose " + lastCoice);
   } else if (userCoice > computerChoice) {
     alert("you need to choose a lower number. " + "the last choose " + lastCoice);
   }
-  lastCoice = userCoice;
+  
   userCoice = guessNumber();
   
 }
