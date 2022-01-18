@@ -21,9 +21,9 @@ let userCoice = guessNumber();
 while (userCoice != computerChoice) {
   let lastCoice = userCoice; 
   if (userCoice < computerChoice) {
-    alert("you need to choose a higher number. " + "the last choose " + lastCoice);
+    alert("you need to choose a higher number. " + "Your last choice " + lastCoice);
   } else if (userCoice > computerChoice) {
-    alert("you need to choose a lower number. " + "the last choose " + lastCoice);
+    alert("you need to choose a lower number. " + "Your last choice " + lastCoice);
   }
   
   userCoice = guessNumber();
